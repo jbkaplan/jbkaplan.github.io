@@ -1,0 +1,194 @@
+* {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
+	font-size: 1em;
+}
+
+body {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+h1 {
+	font-family: 'Roboto Condensed', sans-serif;;
+	font-weight: 700;
+	font-size: 5em;
+	text-transform: uppercase;
+	line-height: 1em;
+}
+
+h2 {
+	font-family: 'Roboto Condensed', sans-serif;;
+	font-weight: 700;
+	font-size: 2.5em;
+	line-height: 1em;
+}
+
+h3 {
+	font-family: 'Roboto Condensed', sans-serif;;
+	font-weight: 400;
+	font-size: 1.75em;
+}
+
+h4 {
+	font-family: 'Roboto Condensed', sans-serif;;
+	font-weight: 400;
+	font-size: 1.25em;
+}
+
+header {
+		background-image: url(../imgs/bg-header.jpg);
+		background-size: cover;
+		padding: 15%;
+		color: #fff;
+		text-align: center;
+		margin: 0 auto;
+}
+
+.navigation {
+	position: fixed;
+	padding: 30px 10%;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+.navigation ul {
+	float: right;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+}
+
+.navigation li {
+	float: left;
+}
+
+.navigation li a {
+    display: inline-block;
+    color: #fff;
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navigation li a:hover {
+    color: #40c1ac;
+	border-bottom: 2px solid #40c1ac;
+}
+
+.logo {
+	padding-left: 10px;
+}
+
+header h1 {
+	margin-bottom: -10px;
+}
+
+.about {
+	padding: 5%;
+	background: #f5f5f5;
+}
+
+#about-me {
+	width: 75%;
+	margin: 0 auto;
+}
+
+.profile-pic {
+	float: left;
+	margin-right: 50px;
+}
+
+.portfolio {
+	padding: 5%;
+	background: #fff;
+}
+
+.intro-title {
+	text-align: center;
+	margin: 0 auto;
+}
+
+#works li {
+	display: inline-block;
+	margin: 10px;
+}
+
+#works {
+	width: 75%;
+	margin: 0 auto;
+}
+
+.contact {
+	padding: 5%;
+	background: #f5f5f5;
+}
+
+#other-sites {
+	text-align: center;
+}
+
+#other-sites a {
+	margin: 0 2em;
+	font-weight: 700;
+	text-decoration: none;
+	color: #000;
+}
+
+#other-sites a:hover {
+    color: #40c1ac;
+	border-bottom: 2px solid #40c1ac;
+}
+
+#form {
+	width: 50%;
+	margin: 3em auto;
+}
+
+#form p {
+	padding: 1em;
+	border: 1px solid #333;
+}
+
+#form a {
+	padding: 1em;
+	background: #40c1ac;
+	text-decoration: none;
+	color: #fff;
+}
+
+#form a:hover {
+	background: #333;
+}
+
+footer {
+	clear: both;
+	background: #333;
+	color: #fff;
+	padding: 1em;
+	text-align: center;
+}
+
+.footer a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.footer a:hover {
+    color: #40c1ac;
+	border-bottom: 2px solid #40c1ac;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
