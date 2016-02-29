@@ -28,9 +28,12 @@ With my previous experience in HTML5, I was already pretty well versed with the 
 <html>
 <head>
   <title>Blog Post</title>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:700,700italic,400italic,400,300,300italic|Source+Sans+Pro:400,300italic,400italic,300,700,700italic' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <nav>
+  <nav class="blog-nav">
     <a href="#">Home</a> >
     <a href="#">Blog</a> > Blog Title
   </nav>
@@ -41,10 +44,14 @@ With my previous experience in HTML5, I was already pretty well versed with the 
       Paragraph text here.
     </p>
   </section>
-  <hr />
+  <section class="blog-nav">
+    <a href="#">< Previous Post</a>
+    <a href="#">Next Post ></a>
+  </section>
   <footer>
-    < <a href="#">Previous Post</a>
-    <a href="#">Next Post</a> >
+      <section class="footer">
+        <p>&copy;2016 Jonathan Kaplan. All Rights Reserved. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">Top</a></p>
+      </section>
   </footer>
 </body>
 </html>

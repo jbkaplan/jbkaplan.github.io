@@ -1,0 +1,14 @@
+.post {
+	width: 50%;
+	margin: 3em auto;
+}
+
+.breadcrumbs a {
+	color: #40c1ac;
+	text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+	color: #000;
+	border-bottom: 2px solid #000;
+}
