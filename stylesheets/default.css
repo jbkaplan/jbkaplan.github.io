@@ -7,6 +7,11 @@
 body {
 	margin: 0 !important;
 	padding: 0 !important;
+	background: url(../imgs/bg-header.jpg) no-repeat 50% 50% fixed; 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -41,8 +46,9 @@ h4 {
 }
 
 header {
-		background-image: url(../imgs/bg-header.jpg);
+/*		background-image: url(../imgs/bg-header.jpg);
 		background-size: cover;
+    	background-repeat: no-repeat;*/
 		padding: 15%;
 		color: #fff;
 		text-align: center;
@@ -150,8 +156,10 @@ header h1 {
 	margin: 3em auto;
 }
 
-#form p {
+#form input {
 	padding: 1em;
+	display: block;
+	width: 100%;
 	border: 1px solid #333;
 }
 
@@ -160,6 +168,7 @@ header h1 {
 	background: #40c1ac;
 	text-decoration: none;
 	color: #fff;
+	display: inline-block;
 }
 
 #form a:hover {
@@ -167,10 +176,14 @@ header h1 {
 }
 
 footer {
+	/*position: fixed;*/
+	left:0px;
+	bottom:0px;
+	width:100%;
 	clear: both;
-	background: #333;
+	/*background: #333;*/
 	color: #fff;
-	padding: 1em;
+	padding: .4em;
 	text-align: center;
 }
 
