@@ -210,6 +210,10 @@ footer {
 	text-align: center;
 }
 
+#about-sites {
+	text-align: center;
+}
+
 .about img {
 	border-radius: 50%;
 	max-height: 100%;
@@ -233,10 +237,18 @@ footer {
 	border-bottom: 2px solid #40c1ac;
 }
 
+.portfolio .intro-title {
+	text-align: center;
+	margin: 0 auto;
+}
 
+.portfolio .intro-title img {
+	margin: .4em;
+}
 
-
-
+.portfolio #about-sites {
+	margin-top: 1em;
+}
 
 
 
