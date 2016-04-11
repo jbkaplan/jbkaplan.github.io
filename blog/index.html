@@ -4,7 +4,7 @@
 	<title>Jonathan Kaplan | My Blog</title>
 	<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
 	<link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
-	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:700,700italic,400italic,400,300,300italic|Source+Sans+Pro:400,300italic,400italic,300,700,700italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:700,700italic,400italic,400,300,300italic|Source+Sans+Pro:400,700,700italic,900italic,300,300italic,400italic,900' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<nav class="navigation">
@@ -18,84 +18,103 @@
 		</ul>
 	</nav>
 	<header>
-			<center>
+		<div class="site-heading">
+			<div class="container">
 				<h1>Blog</h1>
-			</center>
+				<h4 class="subtitle">Writings on the intricacies of software development</h4>
+			</div>
+		</div>
 	</header>
 		<main>
 			<section>
-				<p>Search</p>
-				<h4>Categories</h4>
-				<ul>
-					<li><a href="git.html">Blog 1</a></li>
-					<li><a href="css-concepts.html">Blog 3</a></li>
-					<li><a href="arrays-hashes.html">Blog 4</a></li>
-					<li><a href="enumerable-methods.html">Blog 5</a></li>
-					<li><a href="ruby-classes.html">Blog 6</a></li>
-					<li><a href="JavaScript.html">Blog 7</a></li>
-					<li><a href="tech.html">Blog 8</a></li>
-				</ul>
-				<img src="../imgs/blog-img.png" alt="Blog Image" />
-				<h2>Week 1</h2>
-				<h4>February 14, 2016</h4>
-				<p>
-					Version control has a lot of benefits. Mainly, it provides a history of revisions to your code, and allows us to merge these revisions to a master that should always be working properly...
-				</p>
-				<a href="git.html">Read More</a>
-			<hr>
-				<img src="../imgs/blog-img.png" alt="Blog Image" />
-				<h2>Week 3</h2>
-				<h4>February 28, 2016</h4>
-				<p>
-					 To begin, the main differences between using classes and ids are that classes can be used on multiple elements...
-				</p>
-				<a href="css-concepts.html">Read More</a>
-			<hr>
-				<img src="../imgs/blog-img.png" alt="Blog Image" />
-				<h2>Week 4</h2>
-				<h4>March 6, 2016</h4>
-				<p>
-					Well, there are a few main differences that really separate the two...
-				</p>
-				<a href="arrays-hashes.html">Read More</a>
-			<hr>
-				<img src="../imgs/blog-img.png" alt="Blog Image" />
-				<h2>Week 5</h2>
-				<h4>March 13, 2016</h4>
-				<p>
-					The <code>Enumerable#map</code> method runs a block of code, an enumerator...
-				</p>
-				<a href="enumerable-methods.html">Read More</a>
-			<hr>
-				<img src="../imgs/blog-img.png" alt="Blog Image" />
-				<h2>Week 6</h2>
-				<h4>March 20, 2016</h4>
-				<p>
-					Ruby classes are very useful. They are great way for organizing objects...
-				</p>
-				<a href="ruby-classes.html">Read More</a>
-			<hr>
-				<img src="../imgs/blog-img.png" alt="Blog Image" />
-				<h2>Week 7</h2>
-				<h4>March 27, 2016</h4>
-				<p>
-					Looping is pretty essential in programming, and luckily, looping in Ruby vs. JavaScript is somewhat similar...
-				</p>
-				<a href="JavaScript.html">Read More</a>
-			<hr>
-				<img src="../imgs/blog-img.png" alt="Blog Image" />
-				<h2>Week 8</h2>
-				<h4>April 3, 2016</h4>
-				<p>
+				<!-- <img src="../imgs/blog-img.png" alt="Blog Image" /> -->
+				<h2 class="post-title">Week 8</h2>
+				<p class="post-author">Posted by Jonathan Kaplan on April 3, 2016</p>
+				<p class="post-subtitle">
 					Functional programming is the theory and style of programming that looks to describe what you want to do...
 				</p>
-				<a href="tech.html">Read More</a>
+				<ul class="read-more">
+					<li>
+						<a href="tech.html">Read More &rarr;</a>
+					</li>
+				</ul>
+			<hr>
+				<!-- <img src="../imgs/blog-img.png" alt="Blog Image" /> -->
+				<h2 class="post-title">Week 7</h2>
+				<p class="post-author">Posted by Jonathan Kaplan on March 27, 2016</p>
+				<p class="post-subtitle">
+					Looping is pretty essential in programming, and luckily, looping in Ruby vs. JavaScript is somewhat similar...
+				</p>
+				<ul class="read-more">
+					<li>
+						<a href="JavaScript.html">Read More &rarr;</a>
+					</li>
+				</ul>
+			<hr>
+				<!-- <img src="../imgs/blog-img.png" alt="Blog Image" /> -->
+				<h2 class="post-title">Week 6</h2>
+				<p class="post-author">Posted by Jonathan Kaplan on March 20, 2016</p>
+				<p class="post-subtitle">
+					Ruby classes are very useful. They are great way for organizing objects...
+				</p>
+				<ul class="read-more">
+					<li>
+						<a href="ruby-classes.html">Read More &rarr;</a>
+					</li>
+				</ul>
+			<hr>
+				<!-- <img src="../imgs/blog-img.png" alt="Blog Image" /> -->
+				<h2 class="post-title">Week 5</h2>
+				<p class="post-author">Posted by Jonathan Kaplan on March 13, 2016</p>
+				<p class="post-subtitle">
+					The <code>Enumerable#map</code> method runs a block of code, an enumerator...
+				</p>
+				<ul class="read-more">
+					<li>
+						<a href="enumerable-methods.html">Read More &rarr;</a>
+					</li>
+				</ul>
+			<hr>
+				<!-- <img src="../imgs/blog-img.png" alt="Blog Image" /> -->
+				<h2 class="post-title">Week 4</h2>
+				<p class="post-author">Posted by Jonathan Kaplan on March 6, 2016</p>
+				<p class="post-subtitle">
+					Well, there are a few main differences that really separate the two...
+				</p>
+				<ul class="read-more">
+					<li>
+						<a href="arrays-hashes.html">Read More &rarr;</a>
+					</li>
+				</ul>
+			<hr>
+				<!-- <img src="../imgs/blog-img.png" alt="Blog Image" /> -->
+				<h2 class="post-title">Week 3</h2>
+				<p class="post-author">Posted by Jonathan Kaplan on February 28, 2016</p>
+				<p class="post-subtitle">
+					 To begin, the main differences between using classes and ids are that classes can be used on multiple elements...
+				</p>
+				<ul class="read-more">
+					<li>
+						<a href="css-concepts.html">Read More &rarr;</a>
+					</li>
+				</ul>
+			<hr>
+				<!-- <img src="../imgs/blog-img.png" alt="Blog Image" /> -->
+				<h2 class="post-title">Week 1</h2>
+				<p class="post-author">Posted by Jonathan Kaplan on February 14, 2016</p>
+				<p class="post-subtitle">
+					Version control has a lot of benefits. Mainly, it provides a history of revisions to your code, and allows us to merge these revisions to a master that should always be working properly...
+				</p>
+				<ul class="read-more">
+					<li>
+						<a href="git.html">Read More &rarr;</a>
+					</li>
+				</ul>
 			</section>
-		</main>
 
 		<footer>
 			&copy;2016 Jonathan Kaplan. All Rights Reserved.
-			<a href="#">Top</a>
 		</footer>
+		</main>
 </body>
 </html>
