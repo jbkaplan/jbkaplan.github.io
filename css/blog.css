@@ -1,25 +1,15 @@
 body {
-	margin: 0 !important;
-	padding: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 #white {
-	background: #fff;
+  background: #fff;
 }
 
 #white footer {
-	color: #333;
+  color: #333;
 }
-
-/*header {
-		background-image: url(../img/bg-header.jpg);
-		background-size: cover;
-    	background-repeat: no-repeat;
-		padding: 15%;
-		color: #fff;
-		text-align: center;
-		margin: 0 auto;
-}*/
 
 header {
     background: no-repeat center center;
@@ -31,28 +21,28 @@ header {
 }
 
 section {
-	padding: 5%;
-	background: #fff;
+  padding: 5%;
+  background: #fff;
 }
 
 .blog-post {
-	padding: 0;
+  padding: 0;
 }
 
 .post {
-	background: #fff;
-	width: 50%;
-	margin: 3em auto;
+  background: #fff;
+  width: 50%;
+  margin: 3em auto;
 }
 
 .breadcrumbs a {
-	color: #40c1ac;
-	text-decoration: none;
+  color: #40c1ac;
+  text-decoration: none;
 }
 
 .breadcrumbs a:hover {
-	color: #000;
-	border-bottom: 2px solid #000;
+  color: #000;
+  border-bottom: 2px solid #000;
 }
 
 code {
@@ -64,23 +54,22 @@ code {
 }
 
 .code-block {
-	background: rgba(64,193,172,.25);
-	border: 1px solid #40c1ac;
-	padding: 3%;
-	font-weight: 400;
+  background: rgba(64,193,172,.25);
+  border: 1px solid #40c1ac;
+  padding: 3%;
+  font-weight: 400;
 }
 
 .code-block code {
-	background-color: #fff;
-	/*padding: 3px;*/
+  background-color: #fff;
 }
 
 strong {
-	font-weight: 400;
+  font-weight: 400;
 }
 
 footer p {
-	text-align: center;
+  text-align: center;
 }
 
 .post-title {
@@ -105,7 +94,6 @@ footer p {
   font-size: 18px;
   font-style: italic;
   margin: 0 0 15px;
-  /*margin-top: 0;*/
 }
 
 .read-more li > a {
@@ -117,8 +105,8 @@ footer p {
 }
 
 .read-more {
-	list-style: none;
-	padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .read-more a {
@@ -192,18 +180,18 @@ footer p {
 }
 
 @media only screen and (min-width: 1170px) {
-	main {
-		margin: 0 auto;
-		width: 66.666666667%;
-	}
+  main {
+    margin: 0 auto;
+    width: 66.666666667%;
+  }
 
 }
 
 hr {
-	margin-top: 20px;
-	margin-bottom: 20px;
-	border: 0;
-	border-top: 1px solid #eee;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee;
 }
 
 .author {
@@ -243,7 +231,7 @@ strong {
   font-size: 20px;
 }
 
-/* Sytle.css */
+/* Navbar */
 
 .navbar-logo {
     height: 30px;
@@ -310,10 +298,6 @@ strong {
     background-color: rgba(255,255,255,1);
 }
 
-.navbar-custom .nav li.active a:hover {
-    /*color: #fff;*/
-}
-
 @media(min-width:768px) {
     .navbar-custom {
         padding: 20px 0;
@@ -352,6 +336,4 @@ strong {
       width: 1170px;
   }
 }
-
-
 
