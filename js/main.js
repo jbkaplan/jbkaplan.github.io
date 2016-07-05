@@ -86,5 +86,20 @@ $(document).ready(function() {
       $('html, body').stop().animate({
              scrollTop: $portfolio.offset().top
          }, 1500, 'easeInOutExpo');
-    })
+    });
+
+    $('#contact').on('click', '#send-message', function(event) {
+      event.preventDefault();
+      var $data = $('#message-form').serialize();
+      var url = 'https://formspree.io/jbkaplan@outlook.com';
+      // var request = $.ajax({
+        // url: url,
+        // method: 'POST',
+        // data: $data,
+        // dataType: 'JSON'
+      // });
+      // request.done(function(response){
+        // $('#contact')
+      // });
+    });
 });
