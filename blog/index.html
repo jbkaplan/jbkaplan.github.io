@@ -2,18 +2,47 @@
 <html>
 <head>
 	<title>Jonathan Kaplan | My Blog</title>
+	    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
-	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+	<link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:700,700italic,400italic,400,300,300italic|Source+Sans+Pro:400,700,700italic,900italic,300,300italic,400italic,900' rel='stylesheet' type='text/css'>
 </head>
-<body>
-	<nav class="navigation">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+	<!-- <nav class="navigation">
 		<img class="logo" src="../img/logo.png" alt="Logo" />
 		<ul>
 			<li><a href="../index.html">Home</a></li>
 			<li><a href="index.html">Blog</a></li>
 		</ul>
+	</nav> -->
+	<!-- Navigation -->
+	<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+	    <div class="container">
+	        <div class="navbar-header">
+	            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+	                <i class="fa fa-bars"></i>
+	            </button>
+	            <a class="navbar-brand page-scroll" href="#page-top">
+	                <img class="navbar-logo img-responsive" src="../img/logo.png" alt="Logo">
+	            </a>
+	        </div>
+
+	        <!-- Collect the nav links, forms, and other content for toggling -->
+	        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+	            <ul class="nav navbar-nav">
+	                <li>
+	                    <a href="../index.html">Home</a>
+	                </li>
+	                <li>
+	                    <a href="index.html">Blog</a>
+	                </li>
+	            </ul>
+	        </div>
+	        <!-- /.navbar-collapse -->
+	    </div>
+	    <!-- /.container -->
 	</nav>
 	
 	<header class="blog-header">
@@ -121,7 +150,12 @@
 		</footer>
 		</main>
 
+		<!-- jQuery -->
 		<script src="../js/jquery.js"></script>
+
+		<!-- Bootstrap Core JavaScript -->
+		<script src="../js/bootstrap.min.js"></script>
+
 		<script src="../js/main.js"></script>
 </body>
 </html>

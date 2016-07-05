@@ -242,3 +242,116 @@ strong {
   font-weight: bold;
   font-size: 20px;
 }
+
+/* Sytle.css */
+
+.navbar-logo {
+    height: 30px;
+    margin-top: -4px;
+}
+
+.navbar-custom {
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(255,255,255,.3); 
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #000;
+}
+
+.navbar-custom .navbar-brand {
+    font-weight: 700;
+}
+
+.navbar-custom .navbar-brand:focus {
+    outline: 0;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle {
+    padding: 4px 6px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle:focus,
+.navbar-custom .navbar-brand .navbar-toggle:active {
+    outline: 0;
+}
+
+.navbar-custom a {
+    color: #fff;
+}
+
+.navbar-custom .nav li a {
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.navbar-custom .nav li a:hover {
+    outline: 0;
+    color: #40c1ac;
+        -webkit-transition: all .5s; 
+        -moz-transition: all .5s;
+        transition: all .5s; 
+    background-color: transparent;
+}
+
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:active {
+    outline: 0;
+    background-color: transparent;
+}
+
+.navbar-custom .nav li.active {
+    outline: 0;
+}
+
+.navbar-custom .nav li.active a {
+    color: #40c1ac;
+    background-color: rgba(255,255,255,1);
+}
+
+.navbar-custom .nav li.active a:hover {
+    /*color: #fff;*/
+}
+
+@media(min-width:768px) {
+    .navbar-custom {
+        padding: 20px 0;
+        border-bottom: 0;
+        letter-spacing: 1px;
+        background: 0 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .navbar-custom.top-nav-collapse {
+        padding: 0;
+        background: #000;
+    }
+}
+
+.navbar-toggle i {
+    color: white;
+}
+
+@media (min-width: 768px) {
+  .navbar .container {
+      width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar .container {
+      width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar .container {
+      width: 1170px;
+  }
+}
+
+
+
