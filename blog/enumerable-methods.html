@@ -16,49 +16,48 @@
 
 </head>
 
-<body id="white">
-    
-  <header style="background-image: url(../imgs/blog/enumerable.jpg);">
-    <div class="container">
-      <div class="row">
-        <div class="post-heading">
-          <h1>Enumerables</h1>
-          <h2 class="subheading">Enumerable#map</h2>
-          <p class="author">Posted by Jonathan Kaplan on March 13, 2016</p>
+  <body id="white">
+      
+    <header style="background-image: url(../img/blog/enumerable.jpg);">
+      <div class="container">
+        <div class="row">
+          <div class="post-heading">
+            <h1>Enumerables</h1>
+            <h2 class="subheading">Enumerable#map</h2>
+            <p class="author">Posted by Jonathan Kaplan on March 13, 2016</p>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
-  
-  <article>
+    </header>
+    
+    <article>
 
-    <div class="container">
-      <p>
-        The <code>Enumerable#map</code> method runs a block of code, an enumerator, and iterates that code block to each element. It returns a new array. This method can also be run using <code>#collect</code>, as it is the exact same method.
-      </p>
-      <p class="code-block">
-        In action, it looks like this:
-        <br>
-        <br>
-        <code>array = [5, 10, 15, 20]</code>
-        <br>
-        <br>
-        <code>array.map { |number| number + number}</code>
-        <br>
-        <br>
-        Returns: <code>#=> [10, 20, 30, 40]</code>
-      </p>
-      <p>
-        What's really important with the <code>#map</code> method is that it changes the return value, and returns an array. This is also what makes it different from the <code>#each</code> method. <code>#each</code> gives you a little more flexibility overall, but if you are looking to change the return value of an array, <code>#map</code> is the way to go.
-      </p>
-      <ul class="read-more">
-        <li>
-          <a href="index.html">&larr; Back to blog</a>
-        </li>
-      </ul>
-    </div>
-        <!-- copy and paste as many sections as you want to add paragraphs -->
-      </article>
+      <div class="container">
+        <p>
+          The <code>Enumerable#map</code> method runs a block of code, an enumerator, and iterates that code block to each element. It returns a new array. This method can also be run using <code>#collect</code>, as it is the exact same method.
+        </p>
+        <p class="code-block">
+          In action, it looks like this:
+          <br>
+          <br>
+          <code>array = [5, 10, 15, 20]</code>
+          <br>
+          <br>
+          <code>array.map { |number| number + number}</code>
+          <br>
+          <br>
+          Returns: <code>#=> [10, 20, 30, 40]</code>
+        </p>
+        <p>
+          What's really important with the <code>#map</code> method is that it changes the return value, and returns an array. This is also what makes it different from the <code>#each</code> method. <code>#each</code> gives you a little more flexibility overall, but if you are looking to change the return value of an array, <code>#map</code> is the way to go.
+        </p>
+        <ul class="read-more">
+          <li>
+            <a href="index.html">&larr; Back to blog</a>
+          </li>
+        </ul>
+      </div>
+    </article>
     <footer>
       <section class="footer">
         <p>&copy;2016 Jonathan Kaplan. All Rights Reserved.</p>
@@ -66,4 +65,4 @@
     </footer>
 
   </body>
-  </html>
+</html>
