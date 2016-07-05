@@ -16,58 +16,57 @@
 
 </head>
 
-<body id="white">
+  <body id="white">
     
-  <header style="background-image: url(../imgs/blog/ruby-classes.jpg);">
-    <div class="container">
-      <div class="row">
-        <div class="post-heading">
-          <h1>Ruby-Classes</h1>
-          <h2 class="subheading">Breaking down dice</h2>
-          <p class="author">Posted by Jonathan Kaplan on March 20, 2016</p>
+    <header style="background-image: url(../img/blog/ruby-classes.jpg);">
+      <div class="container">
+        <div class="row">
+          <div class="post-heading">
+            <h1>Ruby-Classes</h1>
+            <h2 class="subheading">Breaking down dice</h2>
+            <p class="author">Posted by Jonathan Kaplan on March 20, 2016</p>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
-  
-  <article>
+    </header>
+    
+    <article>
 
-    <div class="container">
-      <p>
-        Ruby classes are very useful. They are great way for organizing objects. Classes are like a blueprint, they contain methods attached to the class that can be executed. Classes make our methods easier to access, they form hierarcy, and form objects. Think of dice, a die can have 6 sides so when it is rolled, either one of the 6 sides can show up.
-      </p>
-      <strong>In action, our Dice class can look like this:</strong>
-      <p>
-        <script src="https://gist.github.com/jbkaplan/921bfb5017f895170497.js"></script>
-      </p>
-      <p>
-        <strong>Let's break a few things down here.</strong>
-      </p>
-      <p>
-        First, we have our methods contained in one class <code>Die</code>, this will be our blueprint. We start our class through an <code>initialize</code> method, and here we created that method which takes an argument <code>(sides)</code>. This initialize method is used to receive our argument so that it can begin a method. In our initialize method, we also define an <code>ArgumentError</code> to be brought up if the sides we define on our Die is not > 1, because, well, what's the point in rolling a 1 sided die?!
-      </p>
-      <p>
-        Next, have our <code>roll</code> method which will use a <code>random</code> method to simulate a real rolled die, and return that side.
-      </p>
-      <p>
-        To call our class we start with a variable to define our class <code>die = Die.new(6)</code> (start our method to roll a 6 sided die), and then we can use that to call our other 2 methods for <code>die.sides</code> (return our 6 sides we defined), and <code>die.roll</code> (generate a random roll).
-      </p>
-      <p>
-        One thing to note, we used a <code>attr_accessor :sides</code> to clean up our code. The attr_accessor method takes care of us writing:
-      <p>
-        <script src="https://gist.github.com/jbkaplan/2b66c86838cec663d035.js"></script>
-      </p>
-      <p>
-        You can start to see how effective it is to use classes in Ruby! This is just a simple class, but the more complex our problems, and code have to become, classes become that much more useful.
-      </p>
-      <ul class="read-more">
-        <li>
-          <a href="index.html">&larr; Back to blog</a>
-        </li>
-      </ul>
+      <div class="container">
+        <p>
+          Ruby classes are very useful. They are great way for organizing objects. Classes are like a blueprint, they contain methods attached to the class that can be executed. Classes make our methods easier to access, they form hierarcy, and form objects. Think of dice, a die can have 6 sides so when it is rolled, either one of the 6 sides can show up.
+        </p>
+        <strong>In action, our Dice class can look like this:</strong>
+        <p>
+          <script src="https://gist.github.com/jbkaplan/921bfb5017f895170497.js"></script>
+        </p>
+        <p>
+          <strong>Let's break a few things down here.</strong>
+        </p>
+        <p>
+          First, we have our methods contained in one class <code>Die</code>, this will be our blueprint. We start our class through an <code>initialize</code> method, and here we created that method which takes an argument <code>(sides)</code>. This initialize method is used to receive our argument so that it can begin a method. In our initialize method, we also define an <code>ArgumentError</code> to be brought up if the sides we define on our Die is not > 1, because, well, what's the point in rolling a 1 sided die?!
+        </p>
+        <p>
+          Next, have our <code>roll</code> method which will use a <code>random</code> method to simulate a real rolled die, and return that side.
+        </p>
+        <p>
+          To call our class we start with a variable to define our class <code>die = Die.new(6)</code> (start our method to roll a 6 sided die), and then we can use that to call our other 2 methods for <code>die.sides</code> (return our 6 sides we defined), and <code>die.roll</code> (generate a random roll).
+        </p>
+        <p>
+          One thing to note, we used a <code>attr_accessor :sides</code> to clean up our code. The attr_accessor method takes care of us writing:
+        <p>
+          <script src="https://gist.github.com/jbkaplan/2b66c86838cec663d035.js"></script>
+        </p>
+        <p>
+          You can start to see how effective it is to use classes in Ruby! This is just a simple class, but the more complex our problems, and code have to become, classes become that much more useful.
+        </p>
+        <ul class="read-more">
+          <li>
+            <a href="index.html">&larr; Back to blog</a>
+          </li>
+        </ul>
       </div>
-        <!-- copy and paste as many sections as you want to add paragraphs -->
-      </article>
+    </article>
     <footer>
       <section class="footer">
         <p>&copy;2016 Jonathan Kaplan. All Rights Reserved.</p>
@@ -75,4 +74,4 @@
     </footer>
 
   </body>
-  </html>
+</html>
