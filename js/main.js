@@ -92,14 +92,17 @@ $(document).ready(function() {
       event.preventDefault();
       var $data = $('#message-form').serialize();
       var url = 'https://formspree.io/jbkaplan@outlook.com';
-      // var request = $.ajax({
-        // url: url,
-        // method: 'POST',
-        // data: $data,
-        // dataType: 'JSON'
-      // });
-      // request.done(function(response){
-        // $('#contact')
-      // });
+      var request = $.ajax({
+        url: url,
+        method: 'POST',
+        data: $data,
+        dataType: 'JSON'
+      });
+      request.done(function(response){
+        $('#contact-form').html(`
+          <p>Thanks for reaching out to me! I'll try to get back to you as soon as possible. If you forgot anything or want to send me another message feel free to click the button below.</p>
+          <p><a href="blog/index.html" class="btn btn-overlay btn-lg"><i class="fa fa-envelope fa-fw"></i> Send me a message</a></p>
+        `);
+      });
     });
 });
