@@ -326,6 +326,18 @@ a:focus {
 
 @media(max-width: 375px) {
   .imac {
+    left: -23%;
+    background-size: 65%;
+  }
+  .imac-screens {
+    position: relative;
+    top: 23px;
+    left: 108px;
+  }
+}
+
+@media(max-width: 374px) {
+  .imac {
     left: -34%;
     background-size: 65%;
   }
