@@ -3,6 +3,7 @@ body {
     height: 100%;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
+    overflow-x: hidden;
 }
 
 html {
@@ -230,6 +231,24 @@ a:focus {
    }
 }
 
+@media(max-width: 400px) {
+   .iphone {
+    left: 2%;
+   }
+}
+
+@media(max-width: 350px) {
+   .iphone {
+    left: -8%;
+   }
+}
+
+@media(max-width: 315px) {
+   .iphone {
+    left: -11%;
+   }
+}
+
 .imac {
     height: 445px;
     width: 500px;
@@ -278,6 +297,54 @@ a:focus {
 @media(max-width: 600px) {
   .imac {
     left: 0;
+  }
+}
+
+@media(max-width: 500px) {
+  .imac {
+    left: -5%;
+    background-size: 75%;
+  }
+  .imac-screens {
+      position: relative;
+      top: 26px;
+      left: 86px;
+  }
+}
+
+@media(max-width: 450px) {
+  .imac {
+    left: -10%;
+  }
+}
+
+@media(max-width: 400px) {
+  .imac {
+    left: -19%;
+  }
+}
+
+@media(max-width: 375px) {
+  .imac {
+    left: -34%;
+    background-size: 65%;
+  }
+  .imac-screens {
+    position: relative;
+    top: 23px;
+    left: 108px;
+  }
+}
+
+@media(max-width: 315px) {
+  .imac {
+    left: -38%;
+    background-size: 60%;
+  }
+  .imac-screens {
+    position: relative;
+    top: 21px;
+    left: 119px;
   }
 }
 
