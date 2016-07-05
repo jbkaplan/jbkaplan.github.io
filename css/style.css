@@ -778,3 +778,12 @@ span.border {
     text-align: center;
     width: 100%;
 }
+
+.blog-header {
+    background: no-repeat center center;
+    background-image: url(../img/bg-header.jpg);
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+}
