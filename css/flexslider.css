@@ -119,6 +119,12 @@ html[xmlns] .flexslider-imac .slides {
   } 
 }
 
+@media(max-width: 315px) {
+  .flexslider-imac {
+    width: 256px;
+  } 
+}
+
 .flexslider .slides {
   zoom: 1;
 }
