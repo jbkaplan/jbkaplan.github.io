@@ -70,13 +70,12 @@ $(document).ready(function() {
         var $projectUrl = $(this).attr("href");
         var request = $.get($projectUrl, function(data) {
           $('#project-extended').html(data);
-          loadProjectSlider();
           var $project = $('#project');
-          $('html, body').stop().animate({
+          loadProjectSlider();
+          $('html, body').animate({
                  scrollTop: $project.offset().top
              }, 1500, 'easeInOutExpo');
-          event.preventDefault();
-        }, "html");
+        }, 'html');
     });
 
     // Close Project
