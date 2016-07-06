@@ -79,6 +79,34 @@ a {
     transition: all .2s ease-in-out;
 }
 
+.link {
+  color: rgba(0,0,0,.5);
+  transition: all .3s ease-in-out;
+  padding-left: 1px;
+  padding-right: 1px;
+  border-bottom: 3px solid #40c1ac;
+}
+
+.link:hover, .link:active {
+  text-decoration: none;
+  color: black;
+  background: #40c1ac;
+}
+
+.link-overlay {
+  color: rgba(255,255,255,.8);
+  transition: all .3s ease-in-out;
+  padding-left: 1px;
+  padding-right: 1px;
+  border-bottom: 3px solid #40c1ac;
+}
+
+.link-overlay:hover, .link-overlay:active {
+  text-decoration: none;
+  color: white;
+  background: #40c1ac;
+}
+
 .profile-img {
     border-radius: 50%;
     max-width: 75%;
