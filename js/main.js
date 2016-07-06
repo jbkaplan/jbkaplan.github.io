@@ -81,11 +81,11 @@ $(document).ready(function() {
 
     // Close Project
     $('#project-extended').on('click', '.fa-times-circle-o', function(event){
-      $('#project-extended').html('');
       var $portfolio = $('#portfolio');
       $('html, body').stop().animate({
              scrollTop: $portfolio.offset().top
          }, 1500, 'easeInOutExpo');
+      $('#project-extended').html('');
     });
 
     $('#contact').on('click', '#send-message', function(event) {
