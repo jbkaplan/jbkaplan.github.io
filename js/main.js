@@ -37,6 +37,8 @@ $("body").on("input propertychange", ".floating-label-form-group", function(e) {
     $(this).removeClass("floating-label-form-group-with-focus");
 });
 
+$(function () { $("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); } );
+
 function loadProjectSlider() {
   $('.flexslider').flexslider({
     animation: "slide",
