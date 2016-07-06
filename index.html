@@ -207,33 +207,33 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Contact Me</h2>
-                <p>I'm currently seeking out a new full-time opportunity to find my place in the software world as an engineer. If you'd like to discuss further, I'd love to hear from you.</p> 
-                <p>I can be reached at <a href="mailto:jbkaplan@outlook.com">jbkaplan@outlook.com</a>, or please fill out the form below, and I will get back to you as soon as possible.</p>
+                <p>I'm currently seeking out a new full-time opportunity to find my place in the software world. If you'd like to discuss further, I'd love to hear from you. I can be reached at <a href="mailto:jbkaplan@outlook.com">jbkaplan@outlook.com</a>, or please fill out the form below, and I will get back to you.</p>
                 <!-- <p>
                     <a href="mailto:jbkaplan@outlook.com">Send me a message</a>
                 </p> -->
                 <div class="row content-row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div id="contact-form" class="col-lg-8 col-lg-offset-2">
                         <form action="https://formspree.io/jbkaplan@outlook.com"
-                              method="POST">
+                              method="POST"
+                              id="message-form">
                             <div class="row control-group">
                                 <div class="form-group col-xs-12 floating-label-form-group controls">
                                     <label>Name</label>
-                                    <input type="text" name="name" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
+                                    <input type="text" name="name" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name." required>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="row control-group">
                                 <div class="form-group col-xs-12 floating-label-form-group controls">
                                     <label>Email Address</label>
-                                    <input type="email" name="_replyto" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
+                                    <input type="email" name="_replyto" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address." required>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="row control-group">
                                 <div class="form-group col-xs-12 floating-label-form-group controls">
                                     <label>Message</label>
-                                    <textarea rows="5" name="message" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                    <textarea rows="5" name="message" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message." required></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
@@ -241,7 +241,7 @@
                             <div id="success"></div>
                             <div class="row">
                                 <div class="form-group col-xs-12">
-                                    <button type="submit" class="btn btn-default btn-send">Send</button>
+                                    <button type="submit" id="send-message" class="btn btn-default btn-send">Send</button>
                                 </div>
                             </div>
                             <input type="text" name="_gotcha" style="display:none" />
@@ -281,6 +281,7 @@
     <script src="js/bootstrap.min.js"></script>
 
     <!-- Plugins -->
+    <script src="/js/jqBootstrapValidation.js"></script>
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/jquery.flexslider.js"></script>
 

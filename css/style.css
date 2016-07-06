@@ -866,3 +866,12 @@ span.border {
     text-align: center;
     margin: 0 auto;
 }
+
+#contact-form h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+#contact-form p {
+  margin-bottom: 25px;
+}

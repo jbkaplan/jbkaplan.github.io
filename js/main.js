@@ -37,6 +37,8 @@ $("body").on("input propertychange", ".floating-label-form-group", function(e) {
     $(this).removeClass("floating-label-form-group-with-focus");
 });
 
+$(function () { $("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); } );
+
 function loadProjectSlider() {
   $('.flexslider').flexslider({
     animation: "slide",
@@ -86,5 +88,24 @@ $(document).ready(function() {
       $('html, body').stop().animate({
              scrollTop: $portfolio.offset().top
          }, 1500, 'easeInOutExpo');
-    })
+    });
+
+    $('#contact').on('click', '#send-message', function(event) {
+      event.preventDefault();
+      var $data = $('#message-form').serialize();
+      var url = 'https://formspree.io/jbkaplan@outlook.com';
+      var request = $.ajax({
+        url: url,
+        method: 'POST',
+        data: $data,
+        dataType: 'JSON'
+      });
+      request.done(function(response){
+        $('#contact-form').html(`
+          <h3>Thanks for reaching out to me!</h3> 
+          <p>I'll try to get back to you as soon as possible.</p>
+          <p><a href="blog/index.html" class="btn btn-overlay btn-lg"><i class="fa fa-envelope fa-fw"></i> Send me another message</a></p>
+        `);
+      });
+    });
 });
