@@ -1,6 +1,158 @@
+* {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+}
+
 body {
   margin: 0 !important;
   padding: 0 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1, h2 {
+  font-weight: 700;
+}
+
+h3, h4 {
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 5em;
+  text-transform: uppercase;
+  line-height: 1em;
+}
+
+h2 {
+  font-size: 2.5em;
+  line-height: 1em;
+}
+
+h3 {
+  font-size: 1.75em;
+}
+
+h4 {
+  font-size: 1.25em;
+}
+
+header h1 {
+  margin-bottom: -10px;
+}
+
+footer {
+  left:0px;
+  bottom:0px;
+  clear: both;
+  color: #333;
+  padding: .4em;
+  text-align: center;
+}
+
+.underline_link {
+  color: #333;
+  text-decoration: none;
+  position: relative;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+.underline_link:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: -3px;
+  border-bottom: 2px solid #40c1ac; 
+  height: 4px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.underline_link:hover {
+  text-decoration: none;
+  background-color: #fff;
+  border: none;
+  padding: 0;
+}
+
+.underline_link {
+  text-decoration: none;
+  background-color: #fff;
+  border: none;
+  border-bottom: 1px dashed;
+}
+
+.underline_link:hover:before, .underline_link:focus:before, .underline_link:active:before {
+  right: 0;
+}
+
+.underline_link:hover:after {
+  width: 100%;
+  border-bottom: 2px solid #40c1ac;
+}
+
+b {
+  font-weight: bold;
+}
+
+article {
+  display: block;
+  line-height: 1.5;
+  margin: 30px 0 0 0;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    margin: 0 auto;
+    width: 970px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .container {
+    margin: 0 auto;
+    width: 970px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    margin: 0 auto;
+    width: 750px;
+  }
+
+  .site-heading {
+    padding: 150px 0;
+  }
+
+  .post-heading {
+    padding: 150px 0;
+  }
 }
 
 #white {
@@ -336,4 +488,3 @@ strong {
       width: 1170px;
   }
 }
-
