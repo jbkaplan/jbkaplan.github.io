@@ -156,13 +156,13 @@ article {
 }
 
 @media(max-width: 768px) {
-  .container {
+  header .container {
     padding: 100px 15px;
   }
 }
 
 @media(max-width: 500px) {
-  .container {
+  header .container {
     padding: 75px 15px;
   }
 }
@@ -369,6 +369,8 @@ hr {
 }
 
 .img-right {
+  position: relative;
+  left: -20px;
   float: right;
   margin-left: 1.75em;
   margin-top: 1em;
