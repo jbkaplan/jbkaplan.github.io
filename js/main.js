@@ -110,4 +110,15 @@ $(document).ready(function() {
         `);
       });
     });
+
+    // TypedJS
+    $(function(){
+        $('.typed-element').typed({
+            strings: ["I am a Software Engineer.", "I am a World Traveler.", "I am a Golf Addict.", "Software Engineer, World Traveler, Golf Addict"],
+            typeSpeed: 40,
+            backDelay: 2500,
+            backSpeed: 40,
+        });
+    });
+
 });

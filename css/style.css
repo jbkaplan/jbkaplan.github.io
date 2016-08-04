@@ -412,7 +412,7 @@ a:focus {
     font-size: 45px;
 }
 
-.intro .intro-body .intro-text {
+.intro .intro-body .intro-text, .typed-cursor {
     font-size: 18px;
 }
 
@@ -426,7 +426,7 @@ a:focus {
         font-size: 80px;
     }
 
-    .intro .intro-body .intro-text {
+    .intro .intro-body .intro-text, .typed-cursor {
         font-size: 26px;
     }
 }
@@ -743,10 +743,6 @@ footer p {
   background: rgba(255,255,255,.2);
 }
 
-/*body {
-    webkit-tap-highlight-color: rgba(0,0,0,.2);
-}*/
-
 .floating-label-form-group {
   position: relative;
   margin-bottom: 5px;
@@ -968,24 +964,31 @@ span.border {
   position: relative;
 }
 
-.typed-cursor{
-    opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
+.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
 }
-@keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+
+@keyframes blink {
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
 }
-@-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+
+@-webkit-keyframes blink {
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
 }
-@-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+
+@-moz-keyframes blink {
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+
+.typed-element {
+  display: inline-block;
 }

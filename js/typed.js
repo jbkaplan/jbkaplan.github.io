@@ -270,14 +270,14 @@
         // check string array position
         // on the first string, only delete one word
         // the stopNum actually represents the amount of chars to
-        // keep in the current string. In my case it's 14.
-        // if (self.arrayPos == 1){
-        //  self.stopNum = 14;
-        // }
+        // keep in the current string. In my case it's 5.
+        if (self.arrayPos == 3){
+         self.stopNum = 0;
+        }
         //every other time, delete the whole typed string
-        // else{
-        //  self.stopNum = 0;
-        // }
+        else{
+         self.stopNum = 5;
+        }
 
         if (self.contentType === 'html') {
           // skip over html tags while backspacing
@@ -400,18 +400,13 @@
   };
 
   $.fn.typed.defaults = {
-    strings: ["These are the default values...", "You know what you should do?", "Use your own!", "Have a great day!"],
     stringsElement: null,
-    // typing speed
-    typeSpeed: 0,
     // time before typing starts
-    startDelay: 0,
+    startDelay: 40,
     // backspacing speed
-    backSpeed: 0,
+    backSpeed: 40,
     // shuffle the strings
     shuffle: false,
-    // time before backspacing
-    backDelay: 500,
     // loop
     loop: false,
     // false = infinite
