@@ -67,25 +67,29 @@ $(document).ready(function() {
     // Open Project
     $('.popup-gallery').on('click', '.portfolio-box', function(event) {
         event.preventDefault();
-        var $projectUrl = $(this).attr("href");
+        var $projectUrl = $(this).attr('href');
         var request = $.get($projectUrl, function(data) {
           $('#project-extended').html(data);
           var $project = $('#project');
           loadProjectSlider();
-          $('html, body').animate({
+          $('.loader').fadeIn();
+          $('html, body').delay(200).animate({
                  scrollTop: $project.offset().top
              }, 1500, 'easeInOutExpo');
+          $('.loader').delay(1200).fadeOut();
         }, 'html');
     });
 
     // Close Project
     $('#project-extended').on('click', '.fa-times-circle-o', function(event){
       var $portfolio = $('#portfolio');
+      $('.loader').fadeIn();
       var scrollUp = $('html, body').stop().animate({
              scrollTop: $portfolio.offset().top
          }, 1500, 'easeInOutExpo', function() {
           $('#project-extended').html('');
          });
+        $('.loader').delay(1200).fadeOut();
     });
 
     $('#contact').on('click', '#send-message', function(event) {
@@ -106,4 +110,15 @@ $(document).ready(function() {
         `);
       });
     });
+
+    // TypedJS
+    $(function(){
+        $('.typed-element').typed({
+            strings: ["I am a Software Engineer.", "I am a World Traveler.", "I am a Golf Addict.", "Software Engineer, World Traveler, Golf Addict"],
+            typeSpeed: 40,
+            backDelay: 2500,
+            backSpeed: 40,
+        });
+    });
+
 });
