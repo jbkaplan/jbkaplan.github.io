@@ -64,61 +64,60 @@ function loadProjectSlider() {
 $(document).ready(function() {
   'use strict';
 
-    // Open Project
-    $('.popup-gallery').on('click', '.portfolio-box', function(event) {
-        event.preventDefault();
-        var $projectUrl = $(this).attr('href');
-        var request = $.get($projectUrl, function(data) {
-          $('#project-extended').html(data);
-          var $project = $('#project');
-          loadProjectSlider();
-          $('.loader').fadeIn();
-          $('html, body').delay(200).animate({
-                 scrollTop: $project.offset().top
-             }, 1500, 'easeInOutExpo');
-          $('.loader').delay(1200).fadeOut();
-        }, 'html');
-    });
-
-    // Close Project
-    $('#project-extended').on('click', '.fa-times-circle-o', function(event){
-      var $portfolio = $('#portfolio');
-      $('.loader').fadeIn();
-      var scrollUp = $('html, body').stop().animate({
-             scrollTop: $portfolio.offset().top
-         }, 1500, 'easeInOutExpo', function() {
-          $('#project-extended').html('');
-         });
-        $('.loader').delay(1200).fadeOut();
-    });
-
-    $('#contact').on('click', '#send-message', function(event) {
+  // Open Project
+  $('.popup-gallery').on('click', '.portfolio-box', function(event) {
       event.preventDefault();
-      var $data = $('#message-form').serialize();
-      var url = 'https://formspree.io/jbkaplan@outlook.com';
-      var request = $.ajax({
-        url: url,
-        method: 'POST',
-        data: $data,
-        dataType: 'JSON'
-      });
-      request.done(function(response){
-        $('#contact-form').html(`
-          <h3>Thanks for reaching out to me!</h3> 
-          <p>I'll try to get back to you as soon as possible.</p>
-          <p><a href="blog/index.html" class="btn btn-overlay btn-lg"><i class="fa fa-envelope fa-fw"></i> Send me another message</a></p>
-        `);
-      });
-    });
+      var $projectUrl = $(this).attr('href');
+      var request = $.get($projectUrl, function(data) {
+        $('#project-extended').html(data);
+        var $project = $('#project');
+        loadProjectSlider();
+        $('.loader').fadeIn();
+        $('html, body').delay(200).animate({
+               scrollTop: $project.offset().top
+           }, 1500, 'easeInOutExpo');
+        $('.loader').delay(1200).fadeOut();
+      }, 'html');
+  });
 
-    // TypedJS
-    $(function(){
-      $('.typed-element').typed({
-        strings: ["I am a Software Engineer.", "I am a World Traveler.", "I am a Golf Addict.", "Software Engineer, World Traveler, Golf Addict"],
-        typeSpeed: 40,
-        backDelay: 2500,
-        backSpeed: 40,
-      });
-    });
+  // Close Project
+  $('#project-extended').on('click', '.fa-times-circle-o', function(event){
+    var $portfolio = $('#portfolio');
+    $('.loader').fadeIn();
+    var scrollUp = $('html, body').stop().animate({
+           scrollTop: $portfolio.offset().top
+       }, 1500, 'easeInOutExpo', function() {
+        $('#project-extended').html('');
+       });
+      $('.loader').delay(1200).fadeOut();
+  });
 
+  $('#contact').on('click', '#send-message', function(event) {
+    event.preventDefault();
+    var $data = $('#message-form').serialize();
+    var url = 'https://formspree.io/jbkaplan@outlook.com';
+    var request = $.ajax({
+      url: url,
+      method: 'POST',
+      data: $data,
+      dataType: 'JSON'
+    });
+    request.done(function(response){
+      $('#contact-form').html(`
+        <h3>Thanks for reaching out to me!</h3> 
+        <p>I'll try to get back to you as soon as possible.</p>
+        <p><a href="blog/index.html" class="btn btn-overlay btn-lg"><i class="fa fa-envelope fa-fw"></i> Send me another message</a></p>
+      `);
+    });
+  });
+
+  // TypedJS
+  $(function(){
+    $('.typed-element').typed({
+      strings: ["I am a Software Engineer.", "I am a World Traveler.", "I am a Golf Addict.", "Software Engineer, World Traveler, Golf Addict"],
+      typeSpeed: 40,
+      backDelay: 2500,
+      backSpeed: 40,
+    });
+  });
 });
